@@ -1,10 +1,10 @@
-# Discord2UO 
-Discord & Ultima Online bridge using EasyUO
+# Discord & Ulitma Online Bridge 
+Discord & Ultima Online bridge using EasyUO.
 
 ## Discord Bot
-discord2easyuo.js
-auth.json
+* discord2easyuo.js
+* auth.json
 
 ## EasyUO Scripts
-say.txt
-vendorsearch.txt
+* say.txt
+* vendorsearch.txt
