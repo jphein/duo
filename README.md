@@ -18,8 +18,8 @@ Discord & Ultima Online bridge using EasyUO.
 * EasyUO [[http://www.easyuo.com/forum/download/file.php?id=6826&sid=40837823159df0477bd9d831f1ea9b4b]]
 * node.js [[https://nodejs.org/dist/v10.16.3/node-v10.16.3-x86.msi]]
 * WSL - Windows Subsystem for Linux [[https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6]]
-* curl (apt get install curl)
-* jq (apt get install jq)
+* curl (sudo apt get install curl jq)
+* jq
 
 ## Bot Commands
 * '!say MSG\n Will simply say messages outloud.\n'
