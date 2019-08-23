@@ -14,6 +14,7 @@ Discord & Ultima Online bridge using EasyUO. This will allow you to both send an
 * easyuo2discord
 
 ## Dependencies
+* Windows 10
 * Ultima Online Classic Client [[http://web.cdn.eamythic.com/us/uo/installers/20120309/UOClassicSetup_7_0_24_0.exe]]
 * EasyUO [[http://www.easyuo.com/forum/download/file.php?id=6826&sid=40837823159df0477bd9d831f1ea9b4b]]
 * node.js [[https://nodejs.org/dist/v10.16.3/node-v10.16.3-x86.msi]]
