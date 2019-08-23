@@ -59,12 +59,15 @@ function processCommand(receivedMessage) {
 
 function helpCommand(arguments, receivedMessage) {
     if (arguments.length > 0) {
-        receivedMessage.channel.send("It looks like you might need help with " + arguments)
+	if (arguments = "say") {
+		receivedMessage.channel.send('!say MSG\n Will simply say messages outloud.\n'+
+					     '!say \\MSG\n Will message in the guild chat.\n' +
+					     '!say /MSG\n Will message in the party chat.\n' +
+					     '!say ,MSG\n Will message in the general chat.\n')
+	}
     } else {
-        receivedMessage.channel.send('!say MSG\n Will simply say messages outloud.\n'+
-				     '!g MSG\n Will message in the guild chat.\n' +
-				     '!say ,MSG\n Will message in General Chat.\n' +
-				     '!vendor SEARCH\n Will post a screenshot of the first page of the vendor search.')
+        receivedMessage.channel.send('!help Will display this message. "!help say" will tell more about the say command.\n'+				     
+				     '!vendor SEARCH ITEM\n Will post a screenshot of the first page of the vendor search.')
     }
 }
 
