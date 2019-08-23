@@ -14,12 +14,12 @@ Discord & Ultima Online bridge using EasyUO.
 * easyuo2discord
 
 ## Dependencies
-* Ultima Online Classic Client
-* EasyUO
-* node.js
-* WSL - Windows Subsystem for Linux
-* curl
-* jq
+* Ultima Online Classic Client [[http://web.cdn.eamythic.com/us/uo/installers/20120309/UOClassicSetup_7_0_24_0.exe]]
+* EasyUO [[http://www.easyuo.com/forum/download/file.php?id=6826&sid=40837823159df0477bd9d831f1ea9b4b]]
+* node.js [[https://nodejs.org/dist/v10.16.3/node-v10.16.3-x86.msi]]
+* WSL - Windows Subsystem for Linux [[https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6]]
+* curl (apt get install curl)
+* jq (apt get install jq)
 
 ## Bot Commands
 * '!say MSG\n Will simply say messages outloud.\n'
@@ -29,3 +29,6 @@ Discord & Ultima Online bridge using EasyUO.
 * '!vendor SEARCH ITEM\n Will post a screenshot of the first page of the vendor search.'
 * '!help Will display this message.' 
 * '!help say" will tell more about the say.' 
+
+## Instructions
+* Install
