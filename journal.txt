@@ -11,7 +11,7 @@
 ; Made to work with Excelsior Shard by Elron/Datguy
 
 ;=============================================
-set %scriptpath /mnt/c/Users/%USER/Desktop/journal-discord
+set %scriptpath /mnt/c/Users/%USER/Desktop/easyuo2discord
 set %webhook ;add your discord channel webhook url here
 set %symb < ;use [ for global and < for guild if you want to filter the results
 
