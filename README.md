@@ -1,7 +1,7 @@
 # Discord & Ulitma Online Bridge 
 Discord & Ultima Online bridge using EasyUO.
 
-## Discord Bot
+## Javascript Discord Bot
 * discord2easyuo.js
 * auth.json
 
