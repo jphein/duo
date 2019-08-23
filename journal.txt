@@ -1,0 +1,80 @@
+;=============================================
+; Script: UO ingame chat to Discord
+; OriginalAuthor: Praxiiz Spectreon
+; Further revisions by BlaZe Budd[le]
+; Purpose: Created for Allure of the Unknown
+; to allow players to keep track
+; of public chat and pharos chat
+; when there is a lot of journal
+; spam.
+; Version: 0.7
+; Made to work with Excelsior Shard by Elron/Datguy
+
+;=============================================
+set %scriptpath /mnt/c/Users/%USER/Desktop/journal-discord
+set %webhook ;add your discord channel webhook url here
+set %symb < ;use [ for global and < for guild if you want to filter the results
+
+set #menubutton N/A
+set %index 0
+set %newLine #journal
+
+menu clear
+menu Window Title Chat Viewer
+menu Window Color blue
+menu Window Size 700 170
+menu List Create mainBuffer 10 10 680 150
+menu Show
+menu HideEUO
+
+loop:
+scanJournal 1
+if #menubutton = CLOSED
+  stop
+if %newLine <> #journal
+{
+set %temp #journal
+str pos %temp < p
+str Left %temp 1
+if #STRRES = %symb
+{
+set %string #journal
+
+loop2:
+str Pos %string _
+set %pos #strRes
+str Del %string #strRes 1
+str Ins #strRes #spc %pos
+set %string #strRes
+str Count %string _
+if #strRes > 0
+  goto loop2
+loop3:
+str Pos %string <
+set %pos #strRes
+str Del %string #strRes 1
+str Ins #strRes #spc %pos
+set %string #strRes
+str Count %string <
+if #strRes > 0
+  goto loop3
+loop4:
+str Pos %string >
+set %pos #strRes
+str Del %string #strRes 1
+str Ins #strRes #spc %pos
+set %string #strRes
+str Count %string >
+if #strRes > 0
+ goto loop4
+menu List Add mainBuffer %string
+
+set %qstring  ' , %string , '
+execute cmd.exe /c ubuntu -c %scriptpath %qstring %webhook
+set %newLine #journal
+set %index %index + 1
+menu List Select mainBuffer %index
+}
+}
+goto loop:
+halt
