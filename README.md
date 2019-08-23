@@ -7,21 +7,25 @@ Discord & Ultima Online bridge using EasyUO.
 
 ## EasyUO Scripts
 * say.txt
-* vendorsearch.txt
 * journal.txt
+* vendorsearch.txt
 
 ## Bash Scripts
-* journal-discord
+* easyuo2discord
 
 ## Dependencies
 * Ultima Online Classic Client
 * EasyUO
+* node.js
 * WSL - Windows Subsystem for Linux
-** curl
-** jq
+* curl
+* jq
 
-## Commands
-* '!say MSG\n Will simply say messages outloud.\n'+
-					     '!say \\MSG\n Will message in the guild chat.\n' +
-					     '!say /MSG\n Will message in the party chat.\n' +
-					     '!say ,MSG\n Will message in the general chat.\n')
+## Bot Commands
+* '!say MSG\n Will simply say messages outloud.\n'
+* '!say \\MSG\n Will message in the guild chat.\n' 
+* '!say /MSG\n Will message in the party chat.\n' 
+* '!say ,MSG\n Will message in the general chat.\n'
+* '!vendor SEARCH ITEM\n Will post a screenshot of the first page of the vendor search.'
+* '!help Will display this message.' 
+* '!help say" will tell more about the say.' 
