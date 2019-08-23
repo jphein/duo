@@ -1,5 +1,5 @@
 while *SAY <> #false
 {
-  msg *SAY $
+ msg *SAY $
  set *SAY #false
 }
