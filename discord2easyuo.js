@@ -34,7 +34,8 @@ function processCommand(receivedMessage) {
     		helpCommand(arguments, receivedMessage) //A simple text only response. No need to bother easyuo.
     	break;
 	case "vendor":
-    		vsearchCommand(arguments, receivedMessage) //A more complex function needing it's own entry.
+    		vsearchCommand(arguments, receivedMessage) //A more complex function needing it's own entry. 
+		    					   //It will run a EasyUO script, and then post a screenshot.
     	break;
 	case "etc..."
 		    //add more here
@@ -46,7 +47,7 @@ function processCommand(receivedMessage) {
 	//If not then set the reg variable to #true (-1). //The Say example for instance.
 	//There is no need to make it it's own entry. If you use the "!say this is my message".
 	//It will put "this is my message" in the registry variable *SAY
-	// EasyUO say script say.txt
+	// The EasyUO say script say.txt can look like this:
 	//	while *SAY <> #false
 	//	{
   	//		msg *SAY $
@@ -71,24 +72,15 @@ function vsearchCommand(arguments, receivedMessage) {
     receivedMessage.channel.send('Searching vendors for ' + arguments + "...");
     // Provide a path to a local file
     let filePath = "C:\\Users\\%USER\\Desktop\\search.png"
-    exec("reg add HKCU\\Software\\EasyUO /v *VENDORSEARCH /t REG_SZ /d -1 /f", (err, stdout, stderr) => {
+    
+    exec("reg add HKCU\\Software\\EasyUO /v *VENDORS /t REG_SZ /f /d " + '"' + product + '"' , (err, stdout, stderr) => {
     if (err) {
       console.error(err);
       return;
     }
     console.log(stdout);
     });
-    let product = ""
-    arguments.forEach((value) => {
-	product = product + value + " "
-    })
-    exec("reg add HKCU\\Software\\EasyUO /v *VENDORSEARCHQ /t REG_SZ /f /d " + '"' + product + '"' , (err, stdout, stderr) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    console.log(stdout);
-    });
+    //delete existing screenshot
     exec("del " + filePath , (err, stdout, stderr) => {
     if (err) {
       console.error(err);
@@ -96,7 +88,7 @@ function vsearchCommand(arguments, receivedMessage) {
     }
     console.log(stdout);
     }); 
-    
+    //Post screenshot
     setTimeout(function(){ //Replace with waitforfile to appear function getFile
        const localFileAttachment = new Discord.Attachment(filePath)
        receivedMessage.channel.send(localFileAttachment)
