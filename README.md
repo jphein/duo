@@ -1,4 +1,4 @@
-# Discord2EasyUO 
+# Discord2UO 
 Discord & Ultima Online bridge using EasyUO
 
 ## Discord Bot
