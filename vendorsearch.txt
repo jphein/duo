@@ -1,0 +1,37 @@
+set %path c:\Users\%USER\Desktop\search.png
+while *vendor <> #false
+{
+ set #CONTPOSX 0
+ set #CONTPOSY 0
+ exevent Popup #CHARID 10 10
+ wait 10
+ click 20 30
+ wait 10
+ click 750 530 f
+ wait 30
+ click 40 65 f
+ wait 10
+ msg *vendor
+ wait 10
+ click 750 550 f
+ Gosub sysVarWaitEqual contsize 500_550 30
+ execute cmd.exe /c START /MIN cmd /k nircmd savescreenshot %path
+ set *vendor #false
+}
+
+;*******************************************
+;******* Wait until equal
+;*******************************************
+Sub SysVarWaitEqual
+set %_waitTimeout #scnt + %3
+_svweWait:
+if %_waitTimeout < #scnt
+        {
+        set %return #false
+        return
+        }
+if # . %1 <> %2
+        goto _svweWait
+set %return #true
+return
+;*******************************************
