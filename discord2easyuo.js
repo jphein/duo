@@ -1,4 +1,5 @@
-//Node.js Javascript bot script for Discord to connect to EasyUO through registry variables
+//Node.js Javascript bot script for Discord to connect to EasyUO through registry variables.
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require('./auth.json'); //Discord bot auth token
@@ -25,20 +26,33 @@ function processCommand(receivedMessage) {
     let primaryCommand = splitCommand[0] // The first word directly after the exclamation is the command
     let arguments = splitCommand.slice(1) // All other words are arguments/parameters/options for the command
 
-    console.log("Command received: " + primaryCommand)
+    console.log("Command received: " + primaryCommand) 
     console.log("Arguments: " + arguments) // There may not be any arguments
 
-    if (primaryCommand == "help") {
-        helpCommand(arguments, receivedMessage)
-    } else if (primaryCommand == "vendor") {
-        multiplyCommand(arguments, receivedMessage)
-    } else if (primaryCommand == "say") {
-        sayCommand(arguments, receivedMessage)
-    } else if (primaryCommand == "g") {
-        gCommand(arguments, receivedMessage)
-    } else {
-       // receivedMessage.channel.send("I don't understand the command. Try `!help` or `!say`")
-       checkCommand(primaryCommand, arguments, receivedMessage)
+    switch(primaryCommand) {		
+	case "help":
+    		helpCommand(arguments, receivedMessage) //A simple text only response. No need to bother easyuo.
+    	break;
+	case "vendor":
+    		vsearchCommand(arguments, receivedMessage) //A more complex function needing it's own entry.
+    	break;
+	case "etc..."
+		    //add more here
+		    //etcCommand()
+	break;	    
+  	default:
+    	//If not in the above list then simply pass it along as a registry variable.
+       	//If there are any arguments, use them as the value to the registry variable. 
+	//If not then set the reg variable to #true (-1). //The Say example for instance.
+	//There is no need to make it it's own entry. If you use the "!say this is my message".
+	//It will put "this is my message" in the registry variable *SAY
+	// EasyUO say script say.txt
+	//	while *SAY <> #false
+	//	{
+  	//		msg *SAY $
+ 	//		set *SAY #false
+	//	}    
+       	checkCommand(primaryCommand, arguments, receivedMessage)
     }
 }
 
@@ -46,42 +60,17 @@ function helpCommand(arguments, receivedMessage) {
     if (arguments.length > 0) {
         receivedMessage.channel.send("It looks like you might need help with " + arguments)
     } else {
-        receivedMessage.channel.send('!say MSG \n Will simply say messages outloud.\n !g MSG\n Will message in the guild chat.\n !say ,MSG\n Will message in General Chat.\n !vendor SEARCH\n Will post a screenshot of the first page of the vendor search.')
+        receivedMessage.channel.send('!say MSG\n Will simply say messages outloud.\n'+
+				     '!g MSG\n Will message in the guild chat.\n' +
+				     '!say ,MSG\n Will message in General Chat.\n' +
+				     '!vendor SEARCH\n Will post a screenshot of the first page of the vendor search.')
     }
-}
-
-function checkCommand(primaryCommand, arguments, receivedMessage) {
-    let product = ""
-    arguments.forEach((value) => {
-	product = product + value
-    })
-    exec("reg add HKCU\\Software\\EasyUO /v *" + primaryCommand + product + " /t REG_SZ /f /d " + "-1" , (err, stdout, stderr) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    console.log(stdout);
-    });
-}
-
-function sayCommand(arguments, receivedMessage) {
-    let product = ""
-    arguments.forEach((value) => {
-	product = product + value + " "
-    })
-    exec("reg add HKCU\\Software\\EasyUO /v *SAY /t REG_SZ /f /d " + '"' + product + '"' , (err, stdout, stderr) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    console.log(stdout);
-    });
 }
 
 function vsearchCommand(arguments, receivedMessage) {
     receivedMessage.channel.send('Searching vendors for ' + arguments + "...");
     // Provide a path to a local file
-    let filePath = "C:\\Users\\jp2\\Desktop\\search.png"
+    let filePath = "C:\\Users\\%USER\\Desktop\\search.png"
     exec("reg add HKCU\\Software\\EasyUO /v *VENDORSEARCH /t REG_SZ /d -1 /f", (err, stdout, stderr) => {
     if (err) {
       console.error(err);
@@ -106,16 +95,15 @@ function vsearchCommand(arguments, receivedMessage) {
       return;
     }
     console.log(stdout);
-    });
-
-    var generalChannel = client.channels.get("000000000000000000000") // Replace with known channel ID    
+    }); 
     
     setTimeout(function(){ //Replace with waitforfile to appear function getFile
        const localFileAttachment = new Discord.Attachment(filePath)
-       generalChannel.send(localFileAttachment)
-    }, 35000);
+       receivedMessage.channel.send(localFileAttachment)
+    }, 35000); //Static timeout of 35 seconds is used until I can figure out how to detect the file exists.
 }
 
+//not yet integrated for dyanmic timing of upload 
 function getFile(path, timeout) {
     const timeout2 = setInterval(function() {
 
@@ -132,3 +120,17 @@ function getFile(path, timeout) {
         }
     }, timeout);
 };
+
+function checkCommand(primaryCommand, arguments, receivedMessage) {
+    let product = ""
+    arguments.forEach((value) => {
+	product = product + value
+    })
+    exec("reg add HKCU\\Software\\EasyUO /v *" + primaryCommand + " /t REG_SZ /f /d " + '"' + product + '"' , (err, stdout, stderr) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log(stdout);
+    });
+}
