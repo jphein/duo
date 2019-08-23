@@ -1,4 +1,4 @@
-# Discord & Ulitma Online Bridge 
+# Discord <> Ulitma Online Bridge 
 Discord & Ultima Online bridge using EasyUO.
 
 ## Javascript Discord Bot
