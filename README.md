@@ -4,12 +4,12 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 ## Javascript Discord Bot
 * discord2easyuo.js
 * auth.json
-
+UNAUTHORIZED (not illegal) 3rd party program.
 ## EasyUO Scripts 
 * say.txt
 * journal.txt
 * vendorsearch.txt
-* NOTE: EasyUO is not allowed on official servers. 
+* NOTE: EasyUO is probably considered by EA an UNAUTHORIZED 3rd party program. 
 
 ## Bash Scripts
 * easyuo2discord
