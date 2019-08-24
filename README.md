@@ -9,7 +9,6 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * say.txt
 * journal.txt
 * vendorsearch.txt
-* NOTE: EasyUO is probably considered by EA an UNAUTHORIZED 3rd party program. 
 
 ## Bash Scripts
 * easyuo2discord
@@ -18,6 +17,7 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * Windows 10
 * Ultima Online Classic Client [[http://web.cdn.eamythic.com/us/uo/installers/20120309/UOClassicSetup_7_0_24_0.exe]]
 * EasyUO [[http://www.easyuo.com/forum/download/file.php?id=6826&sid=40837823159df0477bd9d831f1ea9b4b]]
+* NOTE: EasyUO is probably considered by EA an UNAUTHORIZED 3rd party program. 
 * node.js [[https://nodejs.org/dist/v10.16.3/node-v10.16.3-x86.msi]]
 * nircmd.exe [[https://www.nirsoft.net/utils/nircmd.zip]]
 * WSL - Windows Subsystem for Linux [[https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6]]
