@@ -5,10 +5,11 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * discord2easyuo.js
 * auth.json
 
-## EasyUO Scripts
+## EasyUO Scripts 
 * say.txt
 * journal.txt
 * vendorsearch.txt
+* NOTE: EasyUO is not allowed on official servers. 
 
 ## Bash Scripts
 * easyuo2discord
@@ -27,7 +28,7 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * '!say MSG\n Will simply say messages outloud.\n'
 * '!say \\MSG\n Will message in the guild chat.\n' 
 * '!say /MSG\n Will message in the party chat.\n' 
-* '!say ,MSG\n Will message in the general chat.\n'
+* '!say ,MSG\n Will message in the general chat.\n'https://github.com/jphein/duo
 * '!vendor SEARCH ITEM\n Will post a screenshot of the first page of the vendor search.'
 * '!help Will display this message.' 
 * '!help say" will tell more about the say.' 
