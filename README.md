@@ -1,5 +1,5 @@
 # Discord <> Ulitma Online Bridge 
-Discord & Ultima Online bridge using EasyUO. This will allow you to both send and receive messages from your Ultima online charactor using Discord chat service. Also included is a simple vendor search. 
+Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will allow you to both send and receive messages from your Ultima online charactor using Discord chat service. Also included is a simple vendor search. 
 
 ## Javascript Discord Bot
 * discord2easyuo.js
