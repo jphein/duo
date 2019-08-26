@@ -1,0 +1,7 @@
+while *SAY <> #false
+{
+ msg *SAY $
+ set *SAY #falsext
+Find file Copy path
+
+}
