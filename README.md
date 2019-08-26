@@ -13,7 +13,6 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 ## Bash Scripts
 * easyuo2discord.sh
 * installduo.sh
-[[https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6]]
 
 ## Bot Commands
 * !say MSG - Will simply say messages outloud.
