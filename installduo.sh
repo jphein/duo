@@ -1,6 +1,6 @@
 #!/bin/bash
 #Run the following bash commands:
-cd /mnt/c/Users/$USER/Desktop/
+cd /mnt/c/Users/$USER/Desktop/duo
 sudo apt update --yes && sudo apt upgrade --yes
 #Ultima Online Classic Client 
 wget http://web.cdn.eamythic.com/us/uo/installers/20120309/UOClassicSetup_7_0_24_0.exe
