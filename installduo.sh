@@ -26,7 +26,7 @@ unzip easyuo.zip
 #node.js
 curl -o node.msi https://nodejs.org/dist/v10.16.3/node-v10.16.3-x86.msi
 #run install
-./node.msi
+cmd.exe /c node.msi
 #nircmd.exe (for taking screenshots from the cmd line) 
 curl -o nircmd.zip https://www.nirsoft.net/utils/nircmd.zip
 #Unzip and move to duo folder
@@ -35,5 +35,5 @@ unzip nircmd.zip
 sudo chmod u+x ./easyuo2discord.sh
 #Install discord.js depency
 npm install --save discord.js
-#Run disord bot
-cmd.exe /c duo.bat
+#Run discord bot
+Node.exe discord2easyuo.js
