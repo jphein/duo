@@ -51,5 +51,6 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * (Optional) Enable Discord TTS on bot channel. For Text to speech. Hands free chatting. 
 
 ## Thank you!
-* https://medium.com/davao-js/2019-tutorial-creating-your-first-simple-discord-bot-47fc836a170b
-* EasyUO.com, ScriptUO.com, & UOGuide.com.
+* [[https://medium.com/davao-js/2019-tutorial-creating-your-first-simple-discord-bot-47fc836a170b]]
+* [[EasyUO.com]], [[ScriptUO.com]], & [[UOGuide.com]].
+* [[https://atwing.net/home%20automation/shell-commands-assistant/]]
