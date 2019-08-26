@@ -12,7 +12,7 @@
 
 ;=============================================
 set %scriptpath /mnt/c/Users/%username%/Desktop/duo/easyuo2discord.sh
-set %webhook *DUOWEBHOOK;add your discord channel webhook url here
+set %webhook *DUOWEBHOOK ;add your discord channel webhook url here
 set %symb < ;use [ for global and < for guild if you want to filter the results
 
 set #menubutton N/A
