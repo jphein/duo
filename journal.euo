@@ -13,7 +13,7 @@ Find file Copy path
 ; Made to work with Excelsior Shard by Elron/Datguy
 
 ;=============================================
-set %scriptpath /mnt/c/Users/%username%/Desktop/easyuo2discord
+set %scriptpath /mnt/c/Users/%username%/Desktop/duo/easyuo2discord.sh
 set %webhook ;add your discord channel webhook url here
 set %symb < ;use [ for global and < for guild if you want to filter the results
 
