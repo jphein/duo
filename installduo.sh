@@ -35,3 +35,5 @@ unzip nircmd.zip
 sudo chmod u+x ./easyuo2discord.sh
 #Install discord.js depency
 npm install --save discord.js
+#Run disord bot
+cmd.exe /c duo.bat
