@@ -62,3 +62,6 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * [[https://medium.com/davao-js/2019-tutorial-creating-your-first-simple-discord-bot-47fc836a170b]]
 * [[EasyUO.com]], [[ScriptUO.com]], & [[UOGuide.com]].
 * [[https://atwing.net/home%20automation/shell-commands-assistant/]]
+
+## Trademarks
+All trademarks are the property of their respective owners.
