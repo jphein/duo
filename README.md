@@ -12,6 +12,17 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 
 ## Bash Scripts
 * easyuo2discord.sh
+* installduo.sh
+[[https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6]]
+
+## Bot Commands
+* !say MSG - Will simply say messages outloud.
+* !say \MSG - Will message in the guild chat. 
+* !say /MSG - Will message in the party chat.
+* !say ,MSG - Will message in the general chat.
+* !vendor SEARCH ITEM - Will post a screenshot of the first page of the vendor search.
+* !help - Will display this message.
+* !help say - will tell more about the say.
 
 ## Dependencies
 * Windows 10
@@ -24,15 +35,17 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * curl (sudo apt get install curl)
 * jq (sudo apt get install jq)
 
-## Bot Commands
-* '!say MSG\n Will simply say messages outloud.\n'
-* '!say \\MSG\n Will message in the guild chat.\n' 
-* '!say /MSG\n Will message in the party chat.\n' 
-* '!say ,MSG\n Will message in the general chat.\n'https://github.com/jphein/duo
-* '!vendor SEARCH ITEM\n Will post a screenshot of the first page of the vendor search.'
-* '!help Will display this message.' 
-* '!help say" will tell more about the say.' 
-
 ## Instructions
-* Install
+* Install all above dependencies ^
+* Install WSL Ubuntu from Windows 10 App Store
+ * [[https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6]]
+* Run this command in powershell, and restart.
+ * <command>
+* Open Ubuntu terminal and run
+* sudo apt --yes install git #Install git
+* cd /mnt/
+* git clone https://github.com/jphein/duo.git #Git clone the BoXenLinux repository 
+* cd duo
+* chmod u+x installduo.sh #Make install executable
+* ./installduo.sh #Run the install script [install] https://github.com/jphein/duo/blob/master/installduo.sh
 * Enable Discord TTS for bot channel
