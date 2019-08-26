@@ -74,7 +74,7 @@ function helpCommand(arguments, receivedMessage) {
 function vsearchCommand(arguments, receivedMessage) {
     receivedMessage.channel.send('Searching vendors for ' + arguments + "...");
     // Provide a path to a local file
-    let filePath = "C:\\Users\\%USER\\Desktop\\search.png"
+    let filePath = "C:\\Users\\%username%\\Desktop\\search.png"
     
     exec("reg add HKCU\\Software\\EasyUO /v *VENDORS /t REG_SZ /f /d " + '"' + product + '"' , (err, stdout, stderr) => {
     if (err) {
