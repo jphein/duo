@@ -4,6 +4,7 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 ## Javascript Discord Bot
 * discord2easyuo.js
 * auth.json
+* package.json
 
 ## EasyUO Scripts 
 * say.euo
