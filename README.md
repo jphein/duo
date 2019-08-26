@@ -1,5 +1,5 @@
 # Discord <> Ulitma Online Bridge 
-Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will allow you to both send and receive messages from your Ultima online charactor using Discord chat service. Also included is a simple vendor search. This can be combined with IFTTT.com and Google Assistant to control your char and dictate your messages using your voice. If you use Discords tts (Text to Speech) feature, any responses in game can be read back to you in real time. [[https://support.discordapp.com/hc/en-us/articles/212517297-Text-to-Speech-101]]
+Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will allow you to both send and receive messages from your Ultima online charactor using Discord chat service (Web, or mobile app). Also included is a simple vendor search. This can be combined with IFTTT.com and Google Assistant to control your Ultima Online Charactor and dictate your party/guild/general chat messages using your voice. If you use Discords tts (Text to Speech) feature, any responses in game can be read back to you in real time. Perfect for people with impaired sight, or chatting while driving. Framework can be extended easily with additional functions, and scripts. 
 
 ## Javascript Discord Bot
 * discord2easyuo.js
