@@ -12,8 +12,8 @@
 
 ;=============================================
 set %scriptpath /mnt/c/Users/%username%/Desktop/duo/easyuo2discord.sh
-set %webhook *DUOWEBHOOK ;add your discord channel webhook url here
-set %symb < ;use [ for global and < for guild if you want to filter the results
+set %webhook https://DISCORDWEBHOOK ;add your discord channel webhook url here
+;set %symb < ;use [ for global and < for guild if you want to filter the results
 
 set #menubutton N/A
 set %index 0
@@ -36,8 +36,8 @@ if %newLine <> #journal
 set %temp #journal
 str pos %temp < p
 str Left %temp 1
-if #STRRES = %symb
-{
+;if #STRRES = %symb
+;{
 set %string #journalxt
 Find file Copy path
 
@@ -69,6 +69,6 @@ set %newLine #journal
 set %index %index + 1
 menu List Select mainBuffer %index
 }
-}
+;}
 goto loop:
 halt
