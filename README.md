@@ -6,12 +6,12 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * auth.json
 
 ## EasyUO Scripts 
-* say.txt
-* journal.txt
-* vendorsearch.txt
+* say.euo
+* journal.euo
+* vendorsearch.euo
 
 ## Bash Scripts
-* easyuo2discord
+* easyuo2discord.sh
 
 ## Dependencies
 * Windows 10
