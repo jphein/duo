@@ -30,7 +30,7 @@ function processCommand(receivedMessage) {
     console.log("Arguments: " + arguments) // There may not be any arguments
 
     switch(primaryCommand) {		
-	case "help":
+	case "help":echo %username%
     		helpCommand(arguments, receivedMessage) //A simple text only response. No need to bother easyuo.
     	break;
 	case "vendor":
@@ -74,7 +74,7 @@ function helpCommand(arguments, receivedMessage) {
 function vsearchCommand(arguments, receivedMessage) {
     receivedMessage.channel.send('Searching vendors for ' + arguments + "...");
     // Provide a path to a local file
-    let filePath = "C:\\Users\\%username%\\Desktop\\search.png"
+    let filePath = "C:\\Users\\%username%\\Desktop\\duo\\search.png"
     
     exec("reg add HKCU\\Software\\EasyUO /v *VENDOR /t REG_SZ /f /d " + '"' + product + '"' , (err, stdout, stderr) => {
     if (err) {
@@ -83,7 +83,7 @@ function vsearchCommand(arguments, receivedMessage) {
     }
     console.log(stdout);
     });
-    //delete existing screenshot
+    //delete existing screenshotecho %username%
     exec("del " + filePath , (err, stdout, stderr) => {
     if (err) {
       console.error(err);
@@ -107,7 +107,7 @@ function getFile(path, timeout) {
 
         console.log('Checking for: ', file);
         console.log('Exists: ', fileExists);
-
+echo %username%
         if (fileExists) {
 	    const localFileAttachment = new Discord.Attachment(path)
             generalChannel.send(localFileAttachment)
