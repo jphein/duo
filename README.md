@@ -50,7 +50,8 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
   * ./installduo.sh                             #Run the install script.( https://github.com/jphein/duo/blob/master/installduo.sh )
 * Run Ultima Online Classic, and patch (Update) the client. Close when done.
 * Run EasyUO
-  * NOTE: EasyUO is probably considered by EA an UNAUTHORIZED 3rd party program. Use only on servers that allow it. 
+  * NOTE: EasyUO is probably considered by EA an UNAUTHORIZED 3rd party program. 
+      * Use only on servers that allow it. 
   * Load say.euo, journal.euo, and vendorsearch.euo
   * Click "New CLI" button, and login in with your Ultima Online account.
   * Run all scripts.
