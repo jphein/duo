@@ -31,6 +31,9 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * node.js [[https://nodejs.org/dist/v10.16.3/node-v10.16.3-x86.msi]]
 * nircmd.exe [[https://www.nirsoft.net/utils/nircmd.zip]]
 * WSL - Windows Subsystem for Linux [[https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6]]
+ * Open PowerShell as Administrator and run:
+ * [code]Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux[/code]
+ * Restart your computer when prompted.
 * curl (sudo apt get install curl)
 * jq (sudo apt get install jq)
 
