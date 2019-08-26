@@ -5,8 +5,6 @@
 ; Purpose: Created for Allure of the Unknown
 ; to allow players to keep track
 ; of public chat and pharos chatxt
-Find file Copy path
-
 ; when there is a lot of journal
 ; spam.
 ; Version: 0.7
@@ -14,7 +12,7 @@ Find file Copy path
 
 ;=============================================
 set %scriptpath /mnt/c/Users/%username%/Desktop/duo/easyuo2discord.sh
-set %webhook ;add your discord channel webhook url here
+set %webhook *DUOWEBHOOK;add your discord channel webhook url here
 set %symb < ;use [ for global and < for guild if you want to filter the results
 
 set #menubutton N/A
