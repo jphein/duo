@@ -47,8 +47,8 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * Create Webhook for bot channel in Discord.
 * Create Discord bot in @ discord.com
 * Add API Token to auth.json
-* (Optional) Create IFTTT.com rule to connect your Google assistant to your Discord server. For voice commands and transcription.  
-* (Optional) Enable Discord TTS on bot channel. For Text to speech. Hands free chatting. 
+* (Optional) Create IFTTT.com rule to connect your Google assistant to your Discord server. For voice commands, and transcription. The input side of ingame handsfree chatting.  
+* (Optional) Enable Discord TTS on bot channel. For Text to speech. The output side of ingame hands free chatting. 
 
 ## Thank you!
 * [[https://medium.com/davao-js/2019-tutorial-creating-your-first-simple-discord-bot-47fc836a170b]]
