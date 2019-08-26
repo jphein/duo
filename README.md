@@ -24,6 +24,7 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * !help say - will tell more about the say.
 
 ## Dependencies
+* Discord Account: [[https://discordapp.com]]
 * Windows 10
 * Install WSL - Windows Subsystem for Linux (Ubuntu)
   * Install here: [[https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6]]
