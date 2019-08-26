@@ -37,10 +37,6 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 
 ## Instructions
 * Install all above dependencies ^
-* Install WSL Ubuntu from Windows 10 App Store
- * [[https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6]]
-* Run this command in powershell, and restart.
- * <command>
 * Open Ubuntu terminal and run
 * sudo apt --yes install git #Install git
 * cd /mnt/
@@ -48,4 +44,6 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * cd duo
 * chmod u+x installduo.sh #Make install executable
 * ./installduo.sh #Run the install script [install] https://github.com/jphein/duo/blob/master/installduo.sh
-* Enable Discord TTS for bot channel
+* Create Webhook for bot channel in Discord.
+* (Optional) Create IFTTT.com rule to connect your Google assistant to your Discord server. For voice commands and transcription.  
+* (Optional) Enable Discord TTS on bot channel. For Text to speech. Hands free chatting. 
