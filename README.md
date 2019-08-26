@@ -26,7 +26,7 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 
 ## Dependencies
 * Discord Account: [[https://discordapp.com]]
-* Windows 10
+* Windows 10 Virtual Machine (You can use a real computer if you want.)
 * Install WSL - Windows Subsystem for Linux (Ubuntu)
   * Install here: [[https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6]]
   * Open PowerShell as Administrator and run:
@@ -50,6 +50,7 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
   * ./installduo.sh                             #Run the install script.( https://github.com/jphein/duo/blob/master/installduo.sh )
 * Run Ultima Online Classic, and patch (Update) the client. Close when done.
 * Run EasyUO
+  * NOTE: EasyUO is probably considered by EA an UNAUTHORIZED 3rd party program. Use only on servers that allow it. 
   * Load say.euo, journal.euo, and vendorsearch.euo
   * Click "New CLI" button, and login in with your Ultima Online account.
   * Run all scripts.
