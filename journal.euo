@@ -4,7 +4,9 @@
 ; Further revisions by BlaZe Budd[le]
 ; Purpose: Created for Allure of the Unknown
 ; to allow players to keep track
-; of public chat and pharos chat
+; of public chat and pharos chatxt
+Find file Copy path
+
 ; when there is a lot of journal
 ; spam.
 ; Version: 0.7
@@ -38,7 +40,9 @@ str pos %temp < p
 str Left %temp 1
 if #STRRES = %symb
 {
-set %string #journal
+set %string #journalxt
+Find file Copy path
+
 
 loop2:
 str Pos %string _
