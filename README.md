@@ -37,11 +37,11 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 ## Instructions
 * Install all above dependencies ^
 * Open Ubuntu terminal and run
-* cd /mnt/c/Users/$USER/Desktop/              #Change to the Desktop
-* git clone https://github.com/jphein/duo.git #Git clone the duo repository 
-* cd duo                                      #Change to the duo directory on Desktop
-* chmod u+x installduo.sh                     #Make install script executable
-* ./installduo.sh                             #Run the install script.( https://github.com/jphein/duo/blob/master/installduo.sh )
+  * cd /mnt/c/Users/$USER/Desktop/              #Change to the Desktop
+  * git clone https://github.com/jphein/duo.git #Git clone the duo repository 
+  * cd duo                                      #Change to the duo directory on Desktop
+  * chmod u+x installduo.sh                     #Make install script executable
+  * ./installduo.sh                             #Run the install script.( https://github.com/jphein/duo/blob/master/installduo.sh )
 * Create Webhook for bot channel in Discord.
 * Create Discord bot in @ discord.com
 * Add API Token to auth.json
