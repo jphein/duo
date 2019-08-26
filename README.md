@@ -45,8 +45,9 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
   * chmod u+x installduo.sh                     #Make install script executable
   * ./installduo.sh                             #Run the install script.( https://github.com/jphein/duo/blob/master/installduo.sh )
 * Create Webhook for bot channel in Discord.
+  * Add Webhook URL to journal.euo
 * Create Discord bot in @ discord.com
-* Add API Token to auth.json
+  * Add API Token to auth.json
 * (Optional) Create IFTTT.com rule to connect your Google assistant to your Discord server. For voice commands, and transcription. The input side of ingame handsfree chatting.  
 * (Optional) Enable Discord TTS on bot channel. For Text to speech. The output side of ingame hands free chatting. 
 
