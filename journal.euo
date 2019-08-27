@@ -57,7 +57,24 @@ set %string #strRes
 str Count %string '
 if #strRes > 0
   goto loop3
-  
+loop4:
+str Pos %string <
+set %pos #strRes
+str Del %string #strRes 1
+str Ins #strRes #spc %pos
+set %string #strRes
+str Count %string <
+if #strRes > 0
+  goto loop4
+loop5:
+str Pos %string >
+set %pos #strRes
+str Del %string #strRes 1
+str Ins #strRes #spc %pos
+set %string #strRes
+str Count %string >
+if #strRes > 0
+  goto loop5  
 menu List Add mainBuffer %string
 
 set %qstring  ' , %string , '
