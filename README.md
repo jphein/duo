@@ -33,17 +33,15 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
    * Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
   * Restart your computer when prompted.
 * Run Ubuntu Terminal via Cortana, and create a user with same name as your windows user.
-* Install git in Ubuntu terminal
-  * sudo apt --yes install git #Install git without prompting
 
 ## Instructions
 * Install all above dependencies ^
 * Open Ubuntu terminal and run
   * cd /mnt/c/Users/$USER/Desktop/              #Change to the Desktop
-  * git clone https://github.com/jphein/duo.git #Git clone the duo repository 
+  * sudo git clone https://github.com/jphein/duo.git #Git clone the duo repository 
   * cd duo                                      #Change to the duo directory on Desktop
-  * chmod u+x installduo.sh                     #Make install script executable
-  * Create Webhook for bot channel in Discord.
+  * chmod u+x installduo.sh                     #Make install script executable 
+* Create Webhook for bot channel in Discord.
   * Add Webhook URL to journal.euo
 * Create Discord bot in @ discord.com
   * Add API Token to auth.json
