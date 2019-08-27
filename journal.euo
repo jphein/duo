@@ -38,10 +38,7 @@ str pos %temp < p
 str Left %temp 1
 ;if #STRRES = %symb
 ;{
-set %string #journalxt
-Find file Copy path
-
-
+set %string #journal
 loop2:
 str Pos %string _
 set %pos #strRes
