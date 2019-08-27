@@ -30,7 +30,7 @@ function processCommand(receivedMessage) {
     console.log("Arguments: " + arguments) // There may not be any arguments
 
     switch(primaryCommand) {		
-	case "help":echo %username%
+	case "help":
     		helpCommand(arguments, receivedMessage) //A simple text only response. No need to bother easyuo.
     	break;
 	case "vendor":
