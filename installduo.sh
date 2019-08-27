@@ -3,7 +3,7 @@
 #Update
 sudo apt update --yes && sudo apt upgrade --yes
 #Git if not already installed
-sudo apt install --yes git
+#sudo apt install --yes git
 #Unzip
 sudo apt install --yes unzip
 #curl 
