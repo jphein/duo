@@ -14,6 +14,7 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 ## Bash Scripts
 * easyuo2discord.sh
 * installduo.sh
+* runduo.sh
 
 ## Bot Commands
 * !say MSG - Will simply say messages outloud.
