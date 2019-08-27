@@ -59,6 +59,11 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 * (Optional) Create IFTTT.com rule to connect your Google assistant to your Discord server. For voice commands, and transcription. The input side of ingame handsfree chatting.  
 * (Optional) Enable Discord TTS on bot channel. For Text to speech. The output side of ingame hands free chatting. 
 
+## Updating Duo
+* Open Ubuntu terminal and run
+  * cd /mnt/c/Users/$USER/Desktop/duo
+  * git pull duo #Git pull the duo repository 
+
 ## Thank you!
 * [[https://medium.com/davao-js/2019-tutorial-creating-your-first-simple-discord-bot-47fc836a170b]]
 * [[EasyUO.com]], [[ScriptUO.com]], & [[UOGuide.com]].
