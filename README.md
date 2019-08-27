@@ -54,7 +54,7 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
   * Load say.euo, journal.euo, and vendorsearch.euo
   * Click "New CLI" button, and login in with your account.
   * Run all scripts.
-  * Execute runduo.sh from Ubuntu terminal
+* Execute runduo.sh from Ubuntu terminal
   
 * (Optional) Create IFTTT.com rule to connect your Google assistant to your Discord server. For voice commands, and transcription. The input side of ingame handsfree chatting.  
 * (Optional) Enable Discord TTS on bot channel. For Text to speech. The output side of ingame hands free chatting. 
