@@ -1,5 +1,9 @@
+repeat
+{
 while *SAY <> #false
 {
  msg *SAY $
  set *SAY #false
 }
+}
+until *SAY = "turn off"
