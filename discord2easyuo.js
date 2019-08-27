@@ -37,10 +37,10 @@ function processCommand(receivedMessage) {
     		vsearchCommand(arguments, receivedMessage) //A more complex function needing it's own entry. 
 		    					   //It will run a EasyUO script, and then post a screenshot.
     	break;
-	case "etc..."
+	//case "etc..."
 		    //add more here
 		    //etcCommand()
-	break;	    
+	//break;	    
   	default:
     	//If not in the above list then simply pass it along as a registry variable.
        	//If there are any arguments, use them as the value to the registry variable. 
