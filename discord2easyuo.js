@@ -107,14 +107,15 @@ function getFile(path, timeout) {
 
         console.log('Checking for: ', file);
         console.log('Exists: ', fileExists);
-echo %username%
+
         if (fileExists) {
 	    const localFileAttachment = new Discord.Attachment(path)
             generalChannel.send(localFileAttachment)
             clearInterval(timeout);
         }
+	
     }, timeout);
-};
+}
 
 function checkCommand(primaryCommand, arguments, receivedMessage) {
     let product = ""
