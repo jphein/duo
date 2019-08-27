@@ -76,7 +76,12 @@ function vsearchCommand(arguments, receivedMessage) {
     // Provide a path to a local file
     let filePath = "C:\\Users\\%username%\\Desktop\\duo\\search.png"
     
-    exec("reg add HKCU\\Software\\EasyUO /v *VENDOR /t REG_SZ /f /d " + '"' + product + '"' , (err, stdout, stderr) => {
+    let searchString = ""
+    arguments.forEach((value) => {
+	searchString = searchString + value + " "
+    })
+    
+    exec("reg add HKCU\\Software\\EasyUO /v *VENDOR /t REG_SZ /f /d " + '"' + searchString + '"' , (err, stdout, stderr) => {
     if (err) {
       console.error(err);
       return;
