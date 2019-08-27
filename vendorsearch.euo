@@ -1,4 +1,4 @@
-set %path c:\Users\%username%\duo\Desktop\search.png
+set %path c:\Users\%username%\Desktop\duo\search.png
 while *vendor <> #false
 {
  set #CONTPOSX 0
