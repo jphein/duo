@@ -1,4 +1,6 @@
 set %path c:\Users\%username%\Desktop\duo\search.png
+repeat
+{
 while *vendor <> #false
 {
  set #CONTPOSX 0
@@ -18,6 +20,9 @@ while *vendor <> #false
  execute cmd.exe /c START /MIN cmd /k nircmd savescreenshot %path
  set *vendor #false
 }
+}
+until *vendor = "turn off"
+halt
 
 ;*******************************************
 ;******* Wait until equal
