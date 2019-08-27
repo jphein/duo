@@ -32,8 +32,9 @@ curl -o nircmd.zip https://www.nirsoft.net/utils/nircmd.zip
 #Unzip and move to duo folder
 unzip nircmd.zip
 #Make dicord executalle 
-sudo chmod u+x ./easyuo2discord.sh
+#sudo chmod u+x ./easyuo2discord.sh
+exit
 #Install discord.js depency
-npm install --save discord.js
+cmd.exe /c npm install --save discord.js
 #Run discord bot
-Node.exe discord2easyuo.js
+#Node.exe discord2easyuo.js
