@@ -74,7 +74,7 @@ function helpCommand(arguments, receivedMessage) {
 function vsearchCommand(arguments, receivedMessage) {
     receivedMessage.channel.send('Searching vendors for ' + arguments + "...");
     // Provide a path to a local file
-    let filePath = "C:\\Users\\%username%\\Desktop\\duo\\search.png"
+   let filePath = "C:\\Users\\" + process.env.USERNAME + "\\Desktop\\duo\\search.png"
     
     let searchString = ""
     arguments.forEach((value) => {
