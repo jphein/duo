@@ -71,3 +71,7 @@ Discord & Ultima Online bridge using EasyUO. This Ultima Online Discord Bot will
 
 ## Trademarks
 All trademarks are the property of their respective owners.
+
+## License
+
+AGPL-3.0-or-later © 2019–2026 Jeffrey Pine Hein. See [LICENSE](LICENSE).
